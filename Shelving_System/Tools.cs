@@ -6,12 +6,25 @@ namespace ShelvingSystem
 {
     class Tools : Product 
     {
+        private int id;/*, weight*/
         public Tools(int id) : base(id) { }
 
-        public double Weight { get; set; }
+        public double Weight { get; set; }        
 
-        public override string Description => throw new NotImplementedException();
+        public override string Description
+        {
+            get
+            {
+                return $"#{id}: Werkzeug {Weight} kg";
+            }
+        }
 
-        public override string ShortSign => throw new NotImplementedException();
+        public override string ShortSign
+        {
+            get
+            {
+                return "W";
+            }
+        }
     }
 }

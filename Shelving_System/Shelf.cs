@@ -6,6 +6,7 @@ namespace ShelvingSystem
 {
     class Shelf
     {
+        int[,] shelfStorage = new int[3, 2];
         private int height, lenght;
         public Shelf (int height, int lenght)
         {
@@ -15,8 +16,13 @@ namespace ShelvingSystem
 
         public void show()
         {
-            Console.WriteLine("--------------------------");
-            Console.WriteLine("|    |    |    |    |    |");
+            for (int i = 0; i < lenght; i++)
+            {
+                for (int j = 0; j < lenght; j++)
+                {
+                    Console.WriteLine($"{shelfStorage[i, j]}");
+                }
+            }
         }
         
     }

@@ -15,8 +15,21 @@ namespace ShelvingSystem
             this.lenght = lenght;
         }
 
-        public override string Description => return $"#{id};
+        public override string Description
+        {
+            get
+            {
+                return $"#{id}: Buch {width} {height} {lenght}";
+            }
+        }
+            
 
-        public override string ShortSign => return "B";
+        public override string ShortSign
+        {
+            get
+            {
+                return "B";
+            }
+        }
     }
 }
