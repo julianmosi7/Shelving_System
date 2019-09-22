@@ -1,0 +1,11 @@
+D:\Schule\4.Klasse\POS\Projects\Shelving_System\Shelving_System\bin\Debug\netcoreapp2.1\ShelvingSystem.deps.json
+D:\Schule\4.Klasse\POS\Projects\Shelving_System\Shelving_System\bin\Debug\netcoreapp2.1\ShelvingSystem.runtimeconfig.json
+D:\Schule\4.Klasse\POS\Projects\Shelving_System\Shelving_System\bin\Debug\netcoreapp2.1\ShelvingSystem.runtimeconfig.dev.json
+D:\Schule\4.Klasse\POS\Projects\Shelving_System\Shelving_System\bin\Debug\netcoreapp2.1\ShelvingSystem.dll
+D:\Schule\4.Klasse\POS\Projects\Shelving_System\Shelving_System\bin\Debug\netcoreapp2.1\ShelvingSystem.pdb
+D:\Schule\4.Klasse\POS\Projects\Shelving_System\Shelving_System\obj\Debug\netcoreapp2.1\ShelvingSystem.csprojAssemblyReference.cache
+D:\Schule\4.Klasse\POS\Projects\Shelving_System\Shelving_System\obj\Debug\netcoreapp2.1\ShelvingSystem.csproj.CoreCompileInputs.cache
+D:\Schule\4.Klasse\POS\Projects\Shelving_System\Shelving_System\obj\Debug\netcoreapp2.1\ShelvingSystem.AssemblyInfoInputs.cache
+D:\Schule\4.Klasse\POS\Projects\Shelving_System\Shelving_System\obj\Debug\netcoreapp2.1\ShelvingSystem.AssemblyInfo.cs
+D:\Schule\4.Klasse\POS\Projects\Shelving_System\Shelving_System\obj\Debug\netcoreapp2.1\ShelvingSystem.dll
+D:\Schule\4.Klasse\POS\Projects\Shelving_System\Shelving_System\obj\Debug\netcoreapp2.1\ShelvingSystem.pdb
