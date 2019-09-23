@@ -31,17 +31,19 @@ namespace ShelvingSystem
                 Console.WriteLine("---------------------");
                 for (int j = 0; j < shelfStorage.GetLength(1); j++)
                 {
-                    Console.Write(" | ");
+                    Console.Write("|");
                     try
                     {
-                        Console.Write($"{shelfStorage[i, j].ShortSign}");
+                        Console.Write($"{shelfStorage[i, j].ShortSign}");                        
                     }
                     catch (Exception)
                     {
-                        Console.Write("x");                 
+                        Console.Write(" ");
                     }                    
-                }
+                }                
             }
+            Console.Write("\n");
+            Console.Write("---------------------");
         }
 
         public double Workload()
