@@ -21,7 +21,17 @@ namespace ShelvingSystem
             {
                 for (int j = 0; j < shelfStorage.GetLength(1); j++)
                 {
-
+                    try
+                    {
+                        if (!shelfStorage[i, j].Equals(null))
+                        {
+                            Console.WriteLine($"Field {i}/{j} is occupied --> {shelfStorage[i, j].Description}");
+                        }
+                    }
+                    catch (Exception)
+                    {
+                        
+                    }                    
                 }
             }
 
@@ -49,14 +59,29 @@ namespace ShelvingSystem
         public double Workload()
         {
             double workload = 0;
+            double storage = height * lenght;
+            double occupied = 0;
+            
+            
             for (int i = 0; i < shelfStorage.GetLength(0); i++)
             {
                 for (int j = 0; j < shelfStorage.GetLength(1); j++)
                 {
-                    workload = 1;
-                    //implement logic
+                    try
+                    {
+                        if (!shelfStorage[i, j].Equals(null))
+                        {
+                            occupied++;
+                        }
+                    }
+                    catch (Exception)
+                    {
+                        
+                    }            
                 }
             }
+            
+            workload = 100 * occupied / storage;            
             return workload;
         }
 

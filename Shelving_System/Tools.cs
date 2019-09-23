@@ -15,7 +15,7 @@ namespace ShelvingSystem
         {
             get
             {
-                return $"#{id}: Werkzeug {Weight} kg";
+                return $"#{id}: Tool {Weight} kg";
             }
         }
 

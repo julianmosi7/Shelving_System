@@ -10,7 +10,7 @@ namespace ShelvingSystem
 
         public Product(int id)
         {
-            this.id = id;
+            this.id = id++;
         }
 
         public abstract string Description { get; }       

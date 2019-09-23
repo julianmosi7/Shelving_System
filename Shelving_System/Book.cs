@@ -19,7 +19,7 @@ namespace ShelvingSystem
         {
             get
             {
-                return $"#{id}: Buch {width} {height} {lenght}";
+                return $"#{id}: Book {width}x{height}x{lenght}";
             }
         }
             

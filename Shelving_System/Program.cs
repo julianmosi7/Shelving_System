@@ -14,6 +14,10 @@ namespace ShelvingSystem
             shelf.Store(2, 3, book);
             shelf.Store(4, 1, tool);
             shelf.Show();
+            Console.WriteLine("\n");
+            Console.WriteLine($"The workload is: {shelf.Workload()}%");   
+            
+            /*id is null*/
         }
     }
 }
