@@ -6,24 +6,89 @@ namespace ShelvingSystem
 {
     class Shelf
     {
-        int[,] shelfStorage = new int[3, 2];
-        private int height, lenght;
+        Product[,] shelfStorage;
+        private int height, lenght;        
         public Shelf (int height, int lenght)
         {
             this.height = height;
             this.lenght = lenght;
+            shelfStorage = new Product[height, lenght];
         }
 
-        public void show()
+        public void Show()
         {
-            for (int i = 0; i < lenght; i++)
+            for (int i = 0; i < shelfStorage.GetLength(0); i++)
             {
-                for (int j = 0; j < lenght; j++)
+                for (int j = 0; j < shelfStorage.GetLength(1); j++)
                 {
-                    Console.WriteLine($"{shelfStorage[i, j]}");
+
+                }
+            }
+
+            for (int i = 0; i < shelfStorage.GetLength(0); i++)
+            {
+                Console.WriteLine("---------------------");
+                for (int j = 0; j < shelfStorage.GetLength(1); j++)
+                {
+                    Console.Write("|");
+                    try
+                    {
+                        Console.Write($"{shelfStorage[i, j].ShortSign}");
+                    }
+                    catch (Exception)
+                    {
+                        Console.WriteLine("x");                 
+                    }                    
                 }
             }
         }
+
+        public double Workload()
+        {
+            double workload = 0;
+            for (int i = 0; i < shelfStorage.GetLength(0); i++)
+            {
+                for (int j = 0; j < shelfStorage.GetLength(1); j++)
+                {
+                    workload = 1;
+                    //implement logic
+                }
+            }
+            return workload;
+        }
+
+        public void Store(Product product)
+        {
+            for (int i = 0; i < shelfStorage.GetLength(0); i++)
+            {
+                for (int j = 0; j < shelfStorage.GetLength(1); j++)
+                {
+                    if(shelfStorage[i, j].Equals(null))
+                    {
+                        shelfStorage[height, lenght] = product;
+                    }
+                }
+            }
+        }
+
+        public Boolean Store(int height, int lenght, Product product)
+        {
+            bool stored = false;
+            try
+            {
+                if (!shelfStorage[height, lenght].Equals(null))
+                {
+                    Console.WriteLine("Already a product at this position");
+                }
+            }
+            catch (NullReferenceException)
+            {
+                shelfStorage[height, lenght] = product;
+                stored = true;
+            }           
+            
+            return stored;
+        }        
         
     }
 }
