@@ -27,17 +27,18 @@ namespace ShelvingSystem
 
             for (int i = 0; i < shelfStorage.GetLength(0); i++)
             {
+                Console.Write("\n");
                 Console.WriteLine("---------------------");
                 for (int j = 0; j < shelfStorage.GetLength(1); j++)
                 {
-                    Console.Write("|");
+                    Console.Write(" | ");
                     try
                     {
                         Console.Write($"{shelfStorage[i, j].ShortSign}");
                     }
                     catch (Exception)
                     {
-                        Console.WriteLine("x");                 
+                        Console.Write("x");                 
                     }                    
                 }
             }
