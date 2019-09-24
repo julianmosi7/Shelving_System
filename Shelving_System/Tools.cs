@@ -6,8 +6,8 @@ namespace ShelvingSystem
 {
     class Tools : Product 
     {
-        private int id;/*, weight*/
-        public Tools(int id) : base(id) { }
+        private int id;
+        public Tools(int id) : base(id) { this.id = id; }
 
         public double Weight { get; set; }        
 

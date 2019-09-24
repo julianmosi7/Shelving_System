@@ -10,6 +10,7 @@ namespace ShelvingSystem
 
         public Book(int id, int width, int height, int lenght) : base(id)
         {
+            this.id = id;
             this.width = width;
             this.height = height;
             this.lenght = lenght;

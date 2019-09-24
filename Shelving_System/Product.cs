@@ -8,10 +8,7 @@ namespace ShelvingSystem
     {
         private int id;
 
-        public Product(int id)
-        {
-            this.id = id++;
-        }
+        public Product(int id)  { }
 
         public abstract string Description { get; }       
          

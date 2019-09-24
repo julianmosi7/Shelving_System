@@ -16,25 +16,7 @@ namespace ShelvingSystem
         }
 
         public void Show()
-        {
-            for (int i = 0; i < shelfStorage.GetLength(0); i++)
-            {
-                for (int j = 0; j < shelfStorage.GetLength(1); j++)
-                {
-                    try
-                    {
-                        if (!shelfStorage[i, j].Equals(null))
-                        {
-                            Console.WriteLine($"Field {i}/{j} is occupied --> {shelfStorage[i, j].Description}");
-                        }
-                    }
-                    catch (Exception)
-                    {
-                        
-                    }                    
-                }
-            }
-
+        {          
             for (int i = 0; i < shelfStorage.GetLength(0); i++)
             {
                 Console.Write("\n");
@@ -50,8 +32,9 @@ namespace ShelvingSystem
                     {
                         Console.Write(" ");
                     }                    
-                }                
-            }
+                }
+                Console.Write("|");
+            }            
             Console.Write("\n");
             Console.Write("---------------------");
         }
@@ -106,7 +89,7 @@ namespace ShelvingSystem
             {
                 if (!shelfStorage[height, lenght].Equals(null))
                 {
-                    Console.WriteLine("Already a product at this position");
+                    Console.WriteLine($"Field {height}/{lenght} is occupied --> {shelfStorage[height, lenght].Description}");
                 }
             }
             catch (NullReferenceException)
